@@ -1,0 +1,23 @@
+{
+  "name": "bamazon-customer",
+  "version": "1.0.0",
+  "description": "An online storefront.",
+  "main": "bamazonCustomer.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/berrante/Bamazon.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/berrante/Bamazon/issues"
+  },
+  "homepage": "https://github.com/berrante/Bamazon#readme",
+  "dependencies": {
+    "inquirer": "^3.2.2",
+    "mysql": "^2.14.1"
+  }
+}
