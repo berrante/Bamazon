@@ -74,8 +74,9 @@ function questions() {
             }
 
         let answerQuant = parseInt(answer.noOfItem)
-        let stockQuant = parseInt(chosenItem.stock_quantities)
+        let stockQuant = parseInt(chosenItem.stock_quantity)
         let productId = parseInt(chosenItem.item_id)
+        let productName = (chosenItem.product_name)
         let updateQuant = stockQuant - answerQuant
 
               if (answerQuant > stockQuant)
@@ -85,11 +86,25 @@ function questions() {
                   }
                   else if (answerQuant <= stockQuant){
 
-                        updateDatabase(productId,updateQuant);
+                        updateDatabase(productId,updateQuant,answerQuant, productName);
 
                   }
                   else {
-                        console.log("Insufficient Quantity!")
+                        console.log("Ran to end of function.")
                         questions();
                   }
     });
+  });
+};
+
+function updateDatabase(productId, updateQuant, answerQuant, productName) {
+  connection.query(
+    "UPDATE products SET stock_quantity = ? WHERE item_id = ?",
+    [updateQuant, productId],
+    function(err, res) {
+      // Let the user know the purchase was successful, re-run loadProducts
+      console.log("\nSuccessfully purchased " + answerQuant + " " + productName + "'s!");
+      displayItems();
+    }
+  );
+}
