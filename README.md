@@ -3,4 +3,4 @@ An online storefront.
 
 # Starting the App
 
-![](Bamazon1.png)
+![](/Bamazon1.png)
