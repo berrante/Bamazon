@@ -29,6 +29,7 @@ Table displays 195 units of DOOM before purchase.
 After purchase, table displays 190 units.
 
 
+## Completing Transaction (insufficient quantity)
 
-
-
+![](/images/Bamazon6.png)
+If there's not enough 
