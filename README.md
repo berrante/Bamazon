@@ -19,6 +19,7 @@ User is then prompted to input a quantity.
 
 ![](/images/Bamazon3.png)
 If there is enough quantity of an item, user is told they have successfully purchased their item.
+The app restarts and displays the storefront again.
 
 ## Updating Database
 
@@ -32,4 +33,5 @@ After purchase, table displays 190 units.
 ## Completing Transaction (insufficient quantity)
 
 ![](/images/Bamazon6.png)
-If there's not enough 
+If there's not enough of an item available for purchase, user is told there is an insufficient quantity. 
+The app restarts and displays the storefront again.
