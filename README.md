@@ -15,7 +15,9 @@ User has selected Item #2, DOOM.
 User is then prompted to input a quantity.
 
 
-###Completing Purchase
+## Completing Purchase
+
+![](/images/Bamazon3.png)
 
 
 
